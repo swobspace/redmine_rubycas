@@ -19,7 +19,7 @@
     </p>
     <p>
         <label for="settings_auto_user_attributes_map"><%= l(:auto_user_attributes_map) %></label>
-        <%= text_field_tag 'settings[auto_user_attributes_map]', @settings['auto_user_attributes_map'] %>
+        <%= text_field_tag 'settings[auto_user_attributes_map]', @settings['auto_user_attributes_map'], :size => 60 %>
     </p>
     <p><%= l(:auto_user_attributes_map_description).html_safe %></p>
     <p><code>firstName=firstName&amp;lastName=lastName&amp;mail=email</code></p>
@@ -33,19 +33,19 @@
     <legend><%= l(:rubycas_client_settings) %></legend>
     <p>
         <label for="settings_base_url"><%= l(:base_url) %></label>
-        <%= text_field_tag 'settings[base_url]', @settings['base_url'] %>
+        <%= text_field_tag 'settings[base_url]', @settings['base_url'], :size => 60 %>
     </p>
     <p>
         <label for="settings_login_url"><%= l(:login_url) %></label>
-        <%= text_field_tag 'settings[login_url]', @settings['login_url'] %>
+        <%= text_field_tag 'settings[login_url]', @settings['login_url'], :size => 60 %>
     </p>
     <p>
         <label for="settings_logout_url"><%= l(:logout_url) %></label>
-        <%= text_field_tag 'settings[logout_url]', @settings['logout_url'] %>
+        <%= text_field_tag 'settings[logout_url]', @settings['logout_url'], :size => 60 %>
     </p>
     <p>
         <label for="settings_validate_url"><%= l(:validate_url) %></label>
-        <%= text_field_tag 'settings[validate_url]', @settings['validate_url'] %>
+        <%= text_field_tag 'settings[validate_url]', @settings['validate_url'], :size => 60 %>
     </p>
     <p>
         <label for="settings_username_session_key"><%= l(:username_session_key) %></label>
